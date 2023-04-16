@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <section class="section">
+        <header>
+            <img src="img/logo (2).png" alt="">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="auto.html">About Me</a>
+                <a href="calc.html">Activity</a>
+            </nav>
+        </header>
+        </section>
+
+        <div class="main-container">
+            <div class="content">
+                <div class="sub"><h1>Hi! I'am</h1></div>
+                <h1 class="sub1">Rizza Mae</h1>
+                <h1 class="sub1">Pardales</h1>
+        
+                <h2>From BSIT 1-1</h2>
+        
+                <p>This website contains all my activity in the subject Web System Lab. 
+                    <br>During the progress of making this website, 
+                    <br>it challenged me and enhanced my skills in web development </p>
+            </div>
+        </div>
+        
+            <script>
+                 ScrollReveal({ 
+                    //common reveal options to create reveal animations
+                    reset: true, /*para umulit ulit yung animation sa bawat pagscroll*/
+                    distance: '60px',
+                    duration: 2500, /*yung bilis ng paganimate/pagappear ng text*/
+                    delay: 400
+                });
+        
+                ScrollReveal().reveal('.sub, .sub1', {delay:300, origin:'top'});
+                ScrollReveal().reveal('h2, p', {delay:300, origin:'bottom'});
+            </script>
+</body>
+</html>

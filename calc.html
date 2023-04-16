@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Activity</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    
+    <section class="section">
+        <header>
+            <img src="img/logo (2).png" alt="">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="auto.html">About Me</a>
+                <a href="calc.html">Activity</a>
+            </nav>
+        </header>
+        </section>
+
+        <div class="container1">
+            <div class="calc">
+                <input type="text" placeholder="0" id="answeroutput">
+                <button onclick="Clear()">Cl</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="option('.')">.</button>
+                <button onclick="option('/')">/</button>
+                <button onclick="option('7')">7</button>
+                <button onclick="option('8')">8</button>
+                <button onclick="option('9')">9</button>
+                <button onclick="option('*')">*</button>
+                <button onclick="option('4')">4</button>
+                <button onclick="option('5')">5</button>
+                <button onclick="option('6')">6</button>
+                <button onclick="option('-')">-</button>
+                <button onclick="option('1')">1</button>
+                <button onclick="option('2')">2</button>
+                <button onclick="option('3')">3</button>
+                <button onclick="option('+')">+</button>
+                <button onclick="option('00')">00</button>
+                <button onclick="option('0')">0</button>
+                <button onclick="calculate()" class="equal">=</button>
+            </div>  
+        </div>
+    
+        <div class="headcalc">
+            <h3>Calcu<span>lator</span></h3>
+        </div>
+    
+                                   
+        <footer>
+                        <div class="footer__copyright1">
+                        <center><h6>Copyright &copy; 2023. Designed by <em>Pardales, Rizza Mae R.</em></h6></center>
+                        </div>
+        </footer>
+    
+        <script>
+            answerOutput = document
+            .getElementById("answeroutput")
+            function option(num){
+                answerOutput.value += num
+            }
+    
+            function calculate(){
+                try{
+                    answerOutput.value = eval
+                    (answerOutput.value);
+                }
+    
+                catch(err)
+                {
+                    alert("Invalid")
+                }
+            }
+    
+            function Clear(){
+                answerOutput.value = "";
+            }
+    
+            function del(){
+                answerOutput.value = answerOutput.value
+                .slice(0,-1)
+            }
+        </script>
+</body>
+</html>
